@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="one">
+                <h1>Список покупок</h1>
+                <table id="shopping-list">
+                    <thead>
+                        <tr>
+                            <th>Назва</th>
+                            <th>Ціна за одиницю</th>
+                            <th>Кількість</th>
+                            <th>Куплено</th>
+                            <th>Сума</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Хліб</td>
+                            <td>30 грн</td>
+                            <td><input type="number" min="0" value="0" class="quantity"></td>
+                            <td><input type="checkbox" class="bought"></td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr>
+                            <td>Бухло</td>
+                            <td>500 грн</td>
+                            <td><input type="number" min="0" value="0" class="quantity"></td>
+                            <td><input type="checkbox" class="bought"></td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr>
+                            <td>Сіль</td>
+                            <td>10 грн</td>
+                            <td><input type="number" min="0" value="0" class="quantity"></td>
+                            <td><input type="checkbox" class="bought"></td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr>
+                            <td>Молоко</td>
+                            <td>50 грн</td>
+                            <td><input type="number" min="0" value="0" class="quantity"></td>
+                            <td><input type="checkbox" class="bought"></td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr>
+                            <td>Сир</td>
+                            <td>70 грн</td>
+                            <td><input type="number" min="0" value="0" class="quantity"></td>
+                            <td><input type="checkbox" class="bought"></td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr>
+                            <td>Вода</td>
+                            <td>10 грн</td>
+                            <td><input type="number" min="0" value="0" class="quantity"></td>
+                            <td><input type="checkbox" class="bought"></td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr>
+                            <td>Чипси</td>
+                            <td>35 грн</td>
+                            <td><input type="number" min="0" value="0" class="quantity"></td>
+                            <td><input type="checkbox" class="bought"></td>
+                            <td class="total"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="displayShoppingList()">Вивести список покупок</button>
+                <button onclick="sortShoppingList()">Відсортувати список покупок</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 
