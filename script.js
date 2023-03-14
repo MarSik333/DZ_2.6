@@ -5,7 +5,7 @@ let shoppingList = [
   {name: "Молоко", price: 50, quantity: 0, bought: false, total: 0},
   {name: "Сир", price: 70, quantity: 0, bought: false, total: 0},
   {name: "Вода", price: 10, quantity: 0, bought: false, total: 0},
-  {name: "Чипси", price: 35, quantity: 0, bought: false, total: 0},
+  {name: "Чпси", price: 35, quantity: 0, bought: false, total: 0},
 ];
 
 let tableRows = document.querySelectorAll("#shopping-list tbody tr");
@@ -31,7 +31,7 @@ function displayShoppingList() {
           shoppingListString += item.quantity + " x " + item.name + ": " + item.total + " грн\n";
       }
   });
-  shoppingListString += "Общая стоимость: " + calculateTotal() + " грн";
+  shoppingListString += "Вартість: " + calculateTotal() + " грн";
   alert(shoppingListString);
 }
 

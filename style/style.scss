@@ -6,3 +6,88 @@ th, td {
     padding: 10px;
     border: 1px solid black;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  $main-color: #333;
+$secondary-color: #fff;
+$shadow-color: rgba(255, 255, 255, 0.1);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $main-color;
+  color: $secondary-color;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: lighten($main-color, 10%);
+  box-shadow: 0 5px 15px $shadow-color;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid $secondary-color;
+}
+
+th {
+  background-color: $main-color;
+}
+
+tr:nth-child(even) {
+  background-color: lighten($main-color, 5%);
+}
+
+tr:hover {
+  background-color: lighten($main-color, 15%);
+  box-shadow: 0 5px 10px $shadow-color;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="number"], input[type="checkbox"] {
+  border: none;
+  padding: 5px;
+  background-color: lighten($main-color, 20%);
+  border-radius: 3px;
+  box-shadow: 0 3px 5px $shadow-color;
+}
+
+input[type="checkbox"] {
+  margin: 0 auto;
+}
+
+button {
+  background-color: $secondary-color;
+  color: $main-color;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px $shadow-color;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darken($secondary-color, 10%);
+  box-shadow: 0 5px 15px $shadow-color;
+  transition: all 0.3s ease-in-out;
+}
+
+.total {
+  font-weight: bold;
+}

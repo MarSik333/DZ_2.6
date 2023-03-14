@@ -6,4 +6,86 @@ table {
 th, td {
   padding: 10px;
   border: 1px solid black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #4d4d4d;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+th {
+  background-color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #404040;
+}
+
+tr:hover {
+  background-color: #595959;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=number], input[type=checkbox] {
+  border: none;
+  padding: 5px;
+  background-color: #666666;
+  border-radius: 3px;
+  box-shadow: 0 3px 5px rgba(255, 255, 255, 0.1);
+}
+
+input[type=checkbox] {
+  margin: 0 auto;
+}
+
+button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.total {
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
